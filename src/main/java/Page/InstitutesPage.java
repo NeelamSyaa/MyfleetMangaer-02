@@ -11,23 +11,24 @@ public class InstitutesPage {
 
     private final Page page;
     private final Locator addInstitutes; 
-    private final Locator BulkUploadbtn; 
+    
     public InstitutesPage(Page page) {
         this.page = page;
-       
         this.addInstitutes = page.getByRole(AriaRole.TAB, new Page.GetByRoleOptions().setName("Institutes"));
-      this.  BulkUploadbtn  =  page.getByRole(AriaRole.TAB, new Page.GetByRoleOptions().setName("Bulk Upload"));
-        
     }
     
     public void addbulkupload(String filePath) {
+       
+        page.waitForLoadState(LoadState.NETWORKIDLE);
         
-    	BulkUploadbtn.waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE));
-    	BulkUploadbtn.click();
+     
+        Locator bulkUploadBtn = page.getByRole(AriaRole.TAB, new Page.GetByRoleOptions().setName("Bulk Upload"));
+       
+    	bulkUploadBtn.waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE));
+    	bulkUploadBtn.click();
         
         page.waitForLoadState(LoadState.DOMCONTENTLOADED);
 
-      
         page.waitForFileChooser(() -> {
             page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Choose File")).click();
         }).setFiles(Paths.get(filePath)); 

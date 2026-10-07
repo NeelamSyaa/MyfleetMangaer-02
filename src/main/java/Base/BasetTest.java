@@ -23,8 +23,13 @@ public class BasetTest {
 		 playwright = Playwright.create();
 	   Browser = playwright.chromium().launch (new BrowserType.LaunchOptions().setHeadless(false) );
        Context = Browser.newContext();
+       BrowserContext context = Browser.newContext(new Browser.NewContextOptions()
+    		    .setViewportSize(1920, 1080)); // Forces standard Desktop resolution
+
      page = Context.newPage();
     page.navigate("https://school-dev.syaa.xyz/login");
+  
+
     
 		
 	}
