@@ -14,9 +14,9 @@ public class BulkInstitutesTest  extends BasetTest{
 		loginPage.login("9180000019", "9180000019");
 		InstitutesPage InstitutesPage = new InstitutesPage(page);
 		
-		String file = "C:\\Users\\Admin\\eclipse-workspace\\MyfleetMangaer-02\\data\\student_invalid_data.xlsx";
-		InstitutesPage.addbulkupload(file);
-	
+		
+		InstitutesPage.addbulkupload("C:\\Users\\Admin\\eclipse-workspace\\MyfleetMangaer-02\\data\\student_invalid_data.xlsx");
+
 	}
 	
 }
