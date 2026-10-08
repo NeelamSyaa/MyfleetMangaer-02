@@ -15,7 +15,7 @@ public class BulkInstitutesTest  extends BasetTest{
 		InstitutesPage InstitutesPage = new InstitutesPage(page);
 		
 		
-		InstitutesPage.addbulkupload("C:\\Users\\Admin\\eclipse-workspace\\MyfleetMangaer-02\\data\\student_invalid_data.xlsx");
+		InstitutesPage.addbulkupload("C:\\Users\\Admin\\eclipse-workspace\\MyfleetMangaer-02\\data\\institute_unique_data.xlsx");
 
 	}
 	

@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Admin\AppData\Local\Temp\testng-eclipse-336849621\testng-customsuite.xml</span>
+                    <span>C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1220571218\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -133,19 +133,20 @@
   message=&apos;Timeout 30000ms exceeded.
   name=&apos;TimeoutError
   stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-    at _ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-1937777378759521825\package\lib\coreBundle.js:12135:32)
-    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-1937777378759521825\package\lib\coreBundle.js:18775:44)
+    at _ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-14551626276195247314\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-14551626276195247314\package\lib\coreBundle.js:18775:44)
 }
 Call log:
--   - waiting for getByRole(AriaRole.TAB, new Page.GetByRoleOptions().setName(&quot;Bulk Upload&quot;)) to be visible
+-   - waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(&quot;Download Button&quot;))
 
 	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
 	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:147)
 	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:136)
 	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:133)
-	at com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:998)
-	at com.microsoft.playwright.impl.LocatorImpl.waitFor(LocatorImpl.java:667)
-	at Page.InstitutesPage.addbulkupload(InstitutesPage.java:25)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:244)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:173)
+	at com.microsoft.playwright.Locator.click(Locator.java:2837)
+	at Page.InstitutesPage.addbulkupload(InstitutesPage.java:77)
 	at TestCases.BulkInstitutesTest.addInstitutest(BulkInstitutesTest.java:18)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -179,16 +180,16 @@ Caused by: com.microsoft.playwright.TimeoutError: Error {
   message=&apos;Timeout 30000ms exceeded.
   name=&apos;TimeoutError
   stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-    at _ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-1937777378759521825\package\lib\coreBundle.js:12135:32)
-    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-1937777378759521825\package\lib\coreBundle.js:18775:44)
+    at _ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-14551626276195247314\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-14551626276195247314\package\lib\coreBundle.js:18775:44)
 }
 Call log:
--   - waiting for getByRole(AriaRole.TAB, new Page.GetByRoleOptions().setName(&quot;Bulk Upload&quot;)) to be visible
+-   - waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(&quot;Download Button&quot;))
 
 	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:273)
 	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:229)
 	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:145)
-	... 34 more
+	... 35 more
 
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -198,7 +199,7 @@ Call log:
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Admin\AppData\Local\Temp\testng-eclipse-336849621\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1220571218\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -251,12 +252,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'addInstitutest')
 data.setCell(0, 2, 'TestCases.BulkInstitutesTest')
-data.setCell(0, 3, 30304);
+data.setCell(0, 3, 32147);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 30 seconds</span>
+              <span class="suite-total-time">Total running time: 32 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -291,11 +292,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">addInstitutest</span>
-                <span class="method-start">4453 ms</span>
+                <span class="method-start">4588 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardwon</span>
-                <span class="method-start">34771 ms</span>
+                <span class="method-start">36750 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

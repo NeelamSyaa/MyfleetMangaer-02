@@ -2,27 +2,27 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-10-07T12:58:13 IST" name="Default suite" finished-at="2026-10-07T12:58:47 IST" duration-ms="34813">
+  <suite started-at="2026-10-08T15:08:44 IST" name="Default suite" finished-at="2026-10-08T15:09:21 IST" duration-ms="36796">
     <groups>
     </groups>
-    <test started-at="2026-10-07T12:58:13 IST" name="Default test" finished-at="2026-10-07T12:58:47 IST" duration-ms="34813">
+    <test started-at="2026-10-08T15:08:44 IST" name="Default test" finished-at="2026-10-08T15:09:21 IST" duration-ms="36796">
       <class name="TestCases.BulkInstitutesTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases.BulkInstitutesTest@7a6d7e92]" started-at="2026-10-07T12:58:13 IST" name="setup" finished-at="2026-10-07T12:58:17 IST" duration-ms="4379" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases.BulkInstitutesTest@7a6d7e92]" started-at="2026-10-08T15:08:45 IST" name="setup" finished-at="2026-10-08T15:08:49 IST" duration-ms="4522" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="addInstitutest()[pri:0, instance:TestCases.BulkInstitutesTest@7a6d7e92]" started-at="2026-10-07T12:58:17 IST" name="addInstitutest" finished-at="2026-10-07T12:58:47 IST" duration-ms="30304" status="FAIL">
+        <test-method signature="addInstitutest()[pri:0, instance:TestCases.BulkInstitutesTest@7a6d7e92]" started-at="2026-10-08T15:08:49 IST" name="addInstitutest" finished-at="2026-10-08T15:09:21 IST" duration-ms="32147" status="FAIL">
           <exception class="com.microsoft.playwright.TimeoutError">
             <message>
               <![CDATA[Error {
   message='Timeout 30000ms exceeded.
   name='TimeoutError
   stack='TimeoutError: Timeout 30000ms exceeded.
-    at _ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-1937777378759521825\package\lib\coreBundle.js:12135:32)
-    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-1937777378759521825\package\lib\coreBundle.js:18775:44)
+    at _ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-14551626276195247314\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-14551626276195247314\package\lib\coreBundle.js:18775:44)
 }
 Call log:
--   - waiting for getByRole(AriaRole.TAB, new Page.GetByRoleOptions().setName("Bulk Upload")) to be visible
+-   - waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Download Button"))
 ]]>
             </message>
             <full-stacktrace>
@@ -30,19 +30,20 @@ Call log:
   message='Timeout 30000ms exceeded.
   name='TimeoutError
   stack='TimeoutError: Timeout 30000ms exceeded.
-    at _ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-1937777378759521825\package\lib\coreBundle.js:12135:32)
-    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-1937777378759521825\package\lib\coreBundle.js:18775:44)
+    at _ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-14551626276195247314\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-14551626276195247314\package\lib\coreBundle.js:18775:44)
 }
 Call log:
--   - waiting for getByRole(AriaRole.TAB, new Page.GetByRoleOptions().setName("Bulk Upload")) to be visible
+-   - waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Download Button"))
 
 at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
 at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:147)
 at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:136)
 at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:133)
-at com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:998)
-at com.microsoft.playwright.impl.LocatorImpl.waitFor(LocatorImpl.java:667)
-at Page.InstitutesPage.addbulkupload(InstitutesPage.java:25)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:244)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:173)
+at com.microsoft.playwright.Locator.click(Locator.java:2837)
+at Page.InstitutesPage.addbulkupload(InstitutesPage.java:77)
 at TestCases.BulkInstitutesTest.addInstitutest(BulkInstitutesTest.java:18)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -76,23 +77,23 @@ Caused by: com.microsoft.playwright.TimeoutError: Error {
   message='Timeout 30000ms exceeded.
   name='TimeoutError
   stack='TimeoutError: Timeout 30000ms exceeded.
-    at _ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-1937777378759521825\package\lib\coreBundle.js:12135:32)
-    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-1937777378759521825\package\lib\coreBundle.js:18775:44)
+    at _ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-14551626276195247314\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-14551626276195247314\package\lib\coreBundle.js:18775:44)
 }
 Call log:
--   - waiting for getByRole(AriaRole.TAB, new Page.GetByRoleOptions().setName("Bulk Upload")) to be visible
+-   - waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Download Button"))
 
 at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:273)
 at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:229)
 at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:145)
-... 34 more
+... 35 more
 ]]>
             </full-stacktrace>
           </exception> <!-- com.microsoft.playwright.TimeoutError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addInstitutest -->
-        <test-method is-config="true" signature="teardwon()[pri:0, instance:TestCases.BulkInstitutesTest@7a6d7e92]" started-at="2026-10-07T12:58:47 IST" name="teardwon" finished-at="2026-10-07T12:58:47 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="teardwon()[pri:0, instance:TestCases.BulkInstitutesTest@7a6d7e92]" started-at="2026-10-08T15:09:21 IST" name="teardwon" finished-at="2026-10-08T15:09:21 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardwon -->
