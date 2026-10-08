@@ -22,7 +22,8 @@ public class InstitutesPage {
         page.waitForLoadState(LoadState.NETWORKIDLE);
         
      
-        Locator bulkUploadBtn = page.getByRole(AriaRole.TAB, new Page.GetByRoleOptions().setName("Bulk Upload"));
+      //  Locator bulkUploadBtn = page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Bulk Upload"));
+        Locator bulkUploadBtn   =  page.locator("//button[text()='Bulk Upload']");
        
     	bulkUploadBtn.waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE));
     	bulkUploadBtn.click();

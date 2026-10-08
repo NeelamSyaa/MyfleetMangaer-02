@@ -16,7 +16,7 @@ public class BulkInstitutesTest  extends BasetTest{
 		
 		String file = "C:\\Users\\Admin\\eclipse-workspace\\MyfleetMangaer-02\\data\\student_invalid_data.xlsx";
 		InstitutesPage.addbulkupload(file);
-		InstitutesPage.addbulkupload(file);
+	
 	}
 	
 }
