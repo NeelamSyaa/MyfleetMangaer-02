@@ -50,7 +50,7 @@ public class InstitutesPage {
         	);
         this.Closewindow = page.getByRole(
         	    AriaRole.BUTTON,
-        	    new Page.GetByRoleOptions().setName("Close")
+        	    new Page.GetByRoleOptions().setName("Close").setExact(true)
         	);
         
         
