@@ -13,6 +13,7 @@ public class MyfeetTest  extends BasetTest{
 	MyfeetPage  MyfeetPage;
 	@Test
 	public void Myfeet() {
+		
 		  loginPage = new loginPage(page);
 		loginPage.login("9180000019", "9180000019");
 	

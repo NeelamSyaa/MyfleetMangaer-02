@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1220571218\testng-customsuite.xml</span>
+                    <span>C:\Users\Admin\AppData\Local\Temp\testng-eclipse-597638087\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="TestCases.BulkInstitutesTest" class="method navigator-link" hash-for-method="addInstitutest">addInstitutest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="TestCases.addDriverTest" class="method navigator-link" hash-for-method="addDriverTest">addDriverTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -121,33 +121,45 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">TestCases.BulkInstitutesTest</span>
+              <span class="class-name">TestCases.addDriverTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addInstitutest">
-                  </a> <!-- addInstitutest -->
-                  <span class="method-name">addInstitutest</span>
-                  <div class="stack-trace">com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 30000ms exceeded.
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-    at _ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-14551626276195247314\package\lib\coreBundle.js:12135:32)
-    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-14551626276195247314\package\lib\coreBundle.js:18775:44)
+                  <a name="addDriverTest">
+                  </a> <!-- addDriverTest -->
+                  <span class="method-name">addDriverTest</span>
+                  <div class="stack-trace">com.microsoft.playwright.PlaywrightException: Error {
+  message=&apos;Error: Element is not an &lt;input&gt;, &lt;textarea&gt;, &lt;select&gt; or [contenteditable] and does not have a role allowing [aria-readonly]
+  name=&apos;Error
+  stack=&apos;Error: Error: Element is not an &lt;input&gt;, &lt;textarea&gt;, &lt;select&gt; or [contenteditable] and does not have a role allowing [aria-readonly]
+    at CRExecutionContext.evaluateWithArguments (C:\Users\Admin\AppData\Local\Temp\playwright-java-607279767888775451\package\lib\coreBundle.js:35397:17)
+    at async LongStandingScope._race (C:\Users\Admin\AppData\Local\Temp\playwright-java-607279767888775451\package\lib\coreBundle.js:3226:18)
+    at async evaluateExpression (C:\Users\Admin\AppData\Local\Temp\playwright-java-607279767888775451\package\lib\coreBundle.js:19157:12)
+    at async ElementHandle.evaluateInUtility (C:\Users\Admin\AppData\Local\Temp\playwright-java-607279767888775451\package\lib\coreBundle.js:19636:18)
+    at async C:\Users\Admin\AppData\Local\Temp\playwright-java-607279767888775451\package\lib\coreBundle.js:20032:27
+    at async ElementHandle._retryAction (C:\Users\Admin\AppData\Local\Temp\playwright-java-607279767888775451\package\lib\coreBundle.js:19797:27)
+    at async ElementHandle._fill (C:\Users\Admin\AppData\Local\Temp\playwright-java-607279767888775451\package\lib\coreBundle.js:20028:16)
+    at async C:\Users\Admin\AppData\Local\Temp\playwright-java-607279767888775451\package\lib\coreBundle.js:23524:29
+    at async _Frame.retryWithProgressAndTimeouts (C:\Users\Admin\AppData\Local\Temp\playwright-java-607279767888775451\package\lib\coreBundle.js:23468:29)
+    at async _Frame.retryWithProgressAndBackoff (C:\Users\Admin\AppData\Local\Temp\playwright-java-607279767888775451\package\lib\coreBundle.js:23452:16)
 }
 Call log:
--   - waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(&quot;Download Button&quot;))
+-   - waiting for getByPlaceholder(&quot;Select Date of Birth&quot;)
+-     - locator resolved to &lt;div placeholder=&quot;Select Date of Birth&quot; class=&quot;MuiFormControl-root MuiFormControl-fullWidth MuiPickersTextField-root css-ipx7s9&quot;&gt;…&lt;/div&gt;
+-     - fill(&quot;01/03/1998&quot;)
+-   - attempting fill action
+-     - waiting for element to be visible, enabled and editable
 
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:58)
 	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:147)
 	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:136)
 	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:133)
-	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:244)
-	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:173)
-	at com.microsoft.playwright.Locator.click(Locator.java:2837)
-	at Page.InstitutesPage.addbulkupload(InstitutesPage.java:77)
-	at TestCases.BulkInstitutesTest.addInstitutest(BulkInstitutesTest.java:18)
+	at com.microsoft.playwright.impl.FrameImpl.fill(FrameImpl.java:310)
+	at com.microsoft.playwright.impl.LocatorImpl.fill(LocatorImpl.java:274)
+	at com.microsoft.playwright.Locator.fill(Locator.java:3506)
+	at Page.DriversPAge.enterDateOfBirth(DriversPAge.java:91)
+	at TestCases.addDriverTest.addDriverTest(addDriverTest.java:25)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -176,17 +188,29 @@ Call log:
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 30000ms exceeded.
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-    at _ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-14551626276195247314\package\lib\coreBundle.js:12135:32)
-    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-14551626276195247314\package\lib\coreBundle.js:18775:44)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message=&apos;Error: Element is not an &lt;input&gt;, &lt;textarea&gt;, &lt;select&gt; or [contenteditable] and does not have a role allowing [aria-readonly]
+  name=&apos;Error
+  stack=&apos;Error: Error: Element is not an &lt;input&gt;, &lt;textarea&gt;, &lt;select&gt; or [contenteditable] and does not have a role allowing [aria-readonly]
+    at CRExecutionContext.evaluateWithArguments (C:\Users\Admin\AppData\Local\Temp\playwright-java-607279767888775451\package\lib\coreBundle.js:35397:17)
+    at async LongStandingScope._race (C:\Users\Admin\AppData\Local\Temp\playwright-java-607279767888775451\package\lib\coreBundle.js:3226:18)
+    at async evaluateExpression (C:\Users\Admin\AppData\Local\Temp\playwright-java-607279767888775451\package\lib\coreBundle.js:19157:12)
+    at async ElementHandle.evaluateInUtility (C:\Users\Admin\AppData\Local\Temp\playwright-java-607279767888775451\package\lib\coreBundle.js:19636:18)
+    at async C:\Users\Admin\AppData\Local\Temp\playwright-java-607279767888775451\package\lib\coreBundle.js:20032:27
+    at async ElementHandle._retryAction (C:\Users\Admin\AppData\Local\Temp\playwright-java-607279767888775451\package\lib\coreBundle.js:19797:27)
+    at async ElementHandle._fill (C:\Users\Admin\AppData\Local\Temp\playwright-java-607279767888775451\package\lib\coreBundle.js:20028:16)
+    at async C:\Users\Admin\AppData\Local\Temp\playwright-java-607279767888775451\package\lib\coreBundle.js:23524:29
+    at async _Frame.retryWithProgressAndTimeouts (C:\Users\Admin\AppData\Local\Temp\playwright-java-607279767888775451\package\lib\coreBundle.js:23468:29)
+    at async _Frame.retryWithProgressAndBackoff (C:\Users\Admin\AppData\Local\Temp\playwright-java-607279767888775451\package\lib\coreBundle.js:23452:16)
 }
 Call log:
--   - waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(&quot;Download Button&quot;))
+-   - waiting for getByPlaceholder(&quot;Select Date of Birth&quot;)
+-     - locator resolved to &lt;div placeholder=&quot;Select Date of Birth&quot; class=&quot;MuiFormControl-root MuiFormControl-fullWidth MuiPickersTextField-root css-ipx7s9&quot;&gt;…&lt;/div&gt;
+-     - fill(&quot;01/03/1998&quot;)
+-   - attempting fill action
+-     - waiting for element to be visible, enabled and editable
 
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:273)
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:277)
 	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:229)
 	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:145)
 	... 35 more
@@ -199,7 +223,7 @@ Call log:
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1220571218\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Admin\AppData\Local\Temp\testng-eclipse-597638087\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -208,7 +232,7 @@ Call log:
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;TestCases.BulkInstitutesTest&quot;/&gt;
+      &lt;class name=&quot;TestCases.addDriverTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -250,14 +274,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'addInstitutest')
-data.setCell(0, 2, 'TestCases.BulkInstitutesTest')
-data.setCell(0, 3, 32147);
+data.setCell(0, 1, 'addDriverTest')
+data.setCell(0, 2, 'TestCases.addDriverTest')
+data.setCell(0, 3, 2071);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 32 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -283,7 +307,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">TestCases.BulkInstitutesTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">TestCases.addDriverTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
@@ -291,12 +315,12 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">addInstitutest</span>
-                <span class="method-start">4588 ms</span>
+                <span class="method-name">addDriverTest</span>
+                <span class="method-start">4587 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardwon</span>
-                <span class="method-start">36750 ms</span>
+                <span class="method-start">6674 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
